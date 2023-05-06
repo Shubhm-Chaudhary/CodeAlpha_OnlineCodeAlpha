@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa6934a365.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputBoxes">
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea id='html-code' onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id='css-code' onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-square-js"></i>JavaScript</label>
+            <textarea id='js-code' onkeyup="run()"></textarea>
+        </div>
+        <div class="OutputBox">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
